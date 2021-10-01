@@ -12,12 +12,12 @@ npm run dev
 
 ### Compiles and minifies for production with Babel
 ```
-npm run build
+npm run babel-build
 ```
 
 ### Deploy server as is
 ```
-npm run start
+npm run build
 ```
 
 
