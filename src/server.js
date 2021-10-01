@@ -123,6 +123,6 @@ app.get('/docs', (_req, res) => {
     res.sendFile('docs/index.html');
 });
 
-app.listen(8001, () => {
-    console.log('Server is listening on port: 8001');
+app.listen(process.env.PORT, () => {
+    console.log(`Server is listening on port: ${process.env.PORT}`);
 });
