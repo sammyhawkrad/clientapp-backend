@@ -11,12 +11,12 @@ npm install
 ### To run this locally 
 
 1. Set up a MongoDB database and create a `.env` file with the following variables: <br>
-
-    MONGO_USER = "username" <br>
-    MONGO_PASS = "user_password" <br>
-    MONGO_DBNAME = "database_name" <br>
-    PORT = 8000 <br>
-
+```
+    MONGO_USER = "username"
+    MONGO_PASS = "user_password"
+    MONGO_DBNAME = "database_name"
+    PORT = 8000
+```
 2. Create 2 collections `clients` and `providers` in the database. Schema/Sample data can be found [here](https://github.com/sammyhawkrad/client-app/blob/main/src/db.json).
 
 <br>
