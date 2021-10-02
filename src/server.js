@@ -11,7 +11,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 
 app.use(express.static('dist', { maxAge: '1y', etag: false }));
-app.use('/docs', express.static('docs'))
 app.use(history());
 
 // Retrieve data for all clients
@@ -117,10 +116,6 @@ app.get('/api/providers', async (_req, res) => {
 // Serve frontend
 app.get('*', (_req, res) => {
     res.sendFile('index.html', { root: 'dist' });
-});
-
-app.get('/docs', (_req, res) => {
-    res.sendFile('docs/index.html');
 });
 
 app.listen(process.env.PORT, () => {
